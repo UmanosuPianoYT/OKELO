@@ -3,10 +3,10 @@ from tkinter import *
 def Valid():
   mdp=passwordEntry.get()
   email=emailEntry.get()
-  del emailEntry()
-  del passwordEntry
-  del Save
-
+  window.destroy()
+  app= Tk()
+  
+  app.mainloop()
 window = Tk()
 
 emailEntry=Entry(window)
